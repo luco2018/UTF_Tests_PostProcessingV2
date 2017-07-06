@@ -1,6 +1,8 @@
 [submodule "Assets/GraphicsTestFramework_Core"]
 	path = Assets/GraphicsTestFramework_Core
 	url = git@github.com:Unity-Technologies/GraphicsTestFramework_Core
+	branch = master
 [submodule "Assets/PostProcessing"]
 	path = Assets/PostProcessing
 	url = git@github.com:Unity-Technologies/PostProcessing
+	branch = v2
