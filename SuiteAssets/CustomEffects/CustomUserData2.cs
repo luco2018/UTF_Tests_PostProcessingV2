@@ -29,7 +29,9 @@ namespace UnityEngine.Rendering.PostProcessing
             var sheet = context.propertySheets.Get(_shader);
             if(context.userData != null)
             {
-                float v = float.Parse(context.userData.ToString());
+                object o = 0;
+                context.userData.TryGetValue("test", out o);
+                float v = (float)o;
                 sheet.properties.SetFloat(Uniforms._Value, v);
             }
             context.command.BlitFullscreenTriangle(context.source, context.destination, sheet, 1);
